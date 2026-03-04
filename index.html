@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 марта</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #fce4e8 0%, #ffe9f0 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #a5385b;
+            text-shadow: 3px 3px 0 #fbc1cb;
+            margin-bottom: 2rem;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .gallery {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        /* стилизованное изображение вместо отсутствующего файла */
+        .flower-icon {
+            font-size: 10rem;
+            line-height: 1;
+            filter: drop-shadow(0 15px 20px #d67a96);
+            background: radial-gradient(circle at 30% 30%, #ff9eb5, #d64e7a);
+            width: 240px;
+            height: 240px;
+            border-radius: 50% 50% 40% 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            border: 6px solid #fff3e6;
+            transform: rotate(2deg);
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin: 3rem 0 1rem;
+            max-width: 1200px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(8px);
+            border-radius: 40px 20px 40px 20px;
+            padding: 2.2rem 1.8rem;
+            width: 280px;
+            box-shadow: 0 20px 35px rgba(180, 70, 100, 0.25), 0 0 0 2px #fff inset;
+            text-align: center;
+            border: 1px solid #ffb7c5;
+        }
+
+        .card h3 {
+            font-size: 2rem;
+            color: #c5476a;
+            margin-bottom: 1rem;
+            border-bottom: 3px dotted #ffb0c3;
+            padding-bottom: 0.5rem;
+        }
+
+        .card p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: #4d2e3b;
+        }
+
+        @media (max-width: 650px) {
+            h1 {
+                font-size: 2.4rem;
+            }
+
+            .flower-icon {
+                width: 180px;
+                height: 180px;
+                font-size: 7rem;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>С 8 Марта!</h1>
+
+    <div class="gallery">
+        <!-- заменяем отсутствующий Flowers.png на яркий цветочный эмодзи -->
+        <div class="flower-icon" aria-label="тюльпаны">
+            🌷
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🌸 нежность</h3>
+            <p>Пусть каждый день дарит улыбки и тепло</p>
+        </div>
+        <div class="card">
+            <h3>🌺 красота</h3>
+            <p>Расцветай с каждым днём, сияй ярче</p>
+        </div>
+        <div class="card">
+            <h3>💐 счастье</h3>
+            <p>Пусть сердце переполняет радость</p>
+        </div>
+    </div>
+</body>
+
+</html>
